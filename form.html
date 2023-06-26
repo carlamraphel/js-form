@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Leave Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" class="logo-icon">
+    </div>
+      <form class="leaveForm">
+        <h2>Employee Leave Form</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" class="name" required>
+  
+        <label for="dept">Department:</label>
+        <input type="text" class="dept" required><br>
+  
+        <label for="leaveTime">Select leave time:</label>
+        <input type="button" value="Half-day" class="leaveTimeButton" data-target="timeOfDaySection" onclick="toggleTimeOfDaySection(this)">
+        <input type="button" value="Whole-day" class="leaveTimeButton" data-target="dateSection" onclick="toggleDateSection(this)"><br>
+        
+          <section id="timeOfDaySection" class="hidden">
+            <label>Select time of day:</label>
+            <input type="checkbox" class="day" id="AM">
+            <label for="AM"><b>Morning</b> (8-12 AM)</label>
+            <input type="checkbox" class="day" id="PM">
+            <label for="PM"><b>Afternoon</b> (1-5 PM)</label><br>
+            <label for="oneDate">Date:</label>
+            <input type="date" class="oneDate" id="oneDate"><br>
+          </section>
+
+          <section id="dateSection" class="hidden">
+            <label for="startDate">Start Date:</label>
+            <input type="date" class="startDate" id="startDate"><br>
+            
+            <label for="endDate">End Date:</label>
+            <input type="date" class="endDate"  id="endDate"><br>
+          </section>
+
+        <label>Reason for leave:</label><br>
+        <input type="checkbox" class="reason" id="sick">
+        <label for="sick">Sick</label>
+        <input type="checkbox" class="reason" id="medical">
+        <label for="medical">Medical</label>
+        <input type="checkbox" class="reason" id="death">
+        <label for="death">Bereavement</label><br>
+        <input type="checkbox" class="reason" id="vacation">
+        <label for="vacation">Vacation</label>
+        <input type="checkbox" class="reason" id="maternity">
+        <label for="maternity">Maternity/Paternity</label>
+        <input type="checkbox" class="reason" id="other">
+        <label for="other">Other</label><br>
+              
+        <label for="comments">Other comments:</label>
+        <textarea class="comments"></textarea><br>
+        
+        <div class="center">
+          <input type="submit" value="Submit">
+        </div>
+        
+        <h3 style="display: none;">Leave Balance: <span class="leaveBalance">24</span> days</h3>
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e6e6ec;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    width: 1720px;
+    height: 70px;
+    background-color: rgb(78, 88, 126);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo-icon{
+    display: block; 
+    margin-left: 6%;
+    margin-top: 0px;
+    width: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+.leaveForm {
+    width: 80%;
+    padding: 40px;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .leaveForm h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .leaveForm label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 12px;
+  }
+  .leaveForm label[for="dept"] {
+    margin-left: 100px;
+  }
+  .leaveForm section[id="timeOfDaySection"] {
+    margin: 7px 0;
+    margin-left: 50px;
+  }
+  .leaveForm section[id="dateSection"] {
+    margin: 10px 0;
+    margin-left: 50px;
+  }
+  
+  .leaveForm input[type="text"],
+  .leaveForm input[type="date"],
+  .leaveForm input[type="button"],
+  .leaveForm input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .leaveForm input[class="reason"] {
+    margin: 2px 0;
+    margin-inline-start: 50px;
+  }
+  .comments {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px; 
+    height: 100px; 
+    border-inline-start-width: 5px;
+  }
+  
+  .leaveForm input[type="button"] {
+    cursor: pointer;
+    background-color: #0a4a86;
+    color: #fff;
+    border: none;
+  }
+
+  .leaveForm input[type="submit"] {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+  }
+
+  .leaveForm input[type="button"]:hover {
+    background-color: #063e72;
+  }
+
+  .leaveForm input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .leaveForm h3 {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .leaveForm span[class=leaveBalance] {
+    color: red;
+  }
